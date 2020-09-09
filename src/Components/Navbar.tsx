@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { AppBar, Toolbar } from "@material-ui/core";
+import { AppBar, Toolbar, Grid } from "@material-ui/core";
 import Cart from "../Pages/CartModel";
 import logo from "../Images/logo.png";
 
@@ -12,6 +12,8 @@ const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
     justifyContent: "space-between",
+    minHeight: "10vh",
+
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
@@ -51,7 +53,7 @@ function Navbar() {
   const classes = useStyles();
 
   return (
-    <div className="navbar">
+    <Grid xs={12}  className={classes.container}>
       <AppBar position="sticky" className={classes.appBar}>
         <Toolbar className={classes.container}>
           <div>
@@ -80,7 +82,7 @@ function Navbar() {
           </div>
         </Toolbar>
       </AppBar>
-    </div>
+    </Grid>
   );
 }
 

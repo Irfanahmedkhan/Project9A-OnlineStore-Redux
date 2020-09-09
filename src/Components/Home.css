@@ -1,10 +1,10 @@
 .home-container {
     width: 100%;
-    min-height: 100vh;
-    background-image: url("../Images/111.jpg");
+    min-height: 80vh;
+    /* background-image: url("../Images/111.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
