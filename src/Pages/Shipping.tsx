@@ -57,7 +57,7 @@ export default function Shipping() {
         <CssTextField
           className={classes.margin}
           id="custom-css-standard-input"
-          label="First Name"
+          label="Last Name"
         />
         <TextField
           id="standard-full-width"

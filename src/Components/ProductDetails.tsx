@@ -6,6 +6,8 @@ import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import Rating from "@material-ui/lab/Rating";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import { Link } from "react-router-dom";
+import { store, add } from "../Store";
+
 
 import { products } from "../Utility/API";
 
@@ -90,7 +92,7 @@ function ProductDetails() {
               variant="contained"
               className={classes.AddToCart}
               startIcon={<AddShoppingCartIcon />}
-              // onClick={handleAddToCart}
+              onClick={() => store.dispatch(add(product))}
               disabled={product.items_left <= 0}
             >
               Add to cart

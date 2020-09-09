@@ -11,11 +11,13 @@ import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
+import thank from '../Images/thank.png'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       width: "100%",
+      height: "100%",
     },
     step: {
       fontWeight: 600,
@@ -42,6 +44,8 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     resetContainer: {
       padding: theme.spacing(3),
+      height: "50vh",
+
     },
     link: {
       textDecoration: "none",
@@ -120,6 +124,7 @@ export default function CheckOut() {
       </Stepper>
       {activeStep === steps.length && (
         <Paper square elevation={0} className={classes.resetContainer}>
+          <img src={thank} alt=' ' style={{width: "10%"}} />
           <Typography style={{ color: "blue", fontWeight: 500 }}>
             {" "}
             Your Purchase Successfully completed, Your will receive confirmation

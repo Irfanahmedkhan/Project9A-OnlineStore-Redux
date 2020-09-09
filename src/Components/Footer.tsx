@@ -1,7 +1,9 @@
 import React from "react";
-import { Grid, Typography, Button } from "@material-ui/core";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import { Grid, Typography, 
+  // Button
+ } from "@material-ui/core";
+// import FacebookIcon from "@material-ui/icons/Facebook";
+// import GitHubIcon from "@material-ui/icons/GitHub";
 
 // import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
@@ -9,10 +11,10 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "center",
     background: "black",
     width: "100%",
-    minHeight: "10vh",
+    minHeight: "5vh",
     itemAlign: "center",
 
     
@@ -20,8 +22,11 @@ const useStyles = makeStyles((theme) => ({
   text: {
     color: "white",
     textAlign: "center",
-    fontWeight: 600,
+    fontWeight: 400,
     letterSpacing: "2px",
+    fontFamily: "Barlow Condensed",
+
+
   },
 }));
 
@@ -36,7 +41,7 @@ function Footer() {
           Created by : Irfan Ahmed
         </Typography>
       </div>
-      <div style={{}}>
+      {/* <div style={{}}>
         <Button
           startIcon={
             <GitHubIcon
@@ -65,7 +70,7 @@ function Footer() {
           }
           href="https://www.facebook.com/irfanahmed01"
         ></Button>
-      </div>
+      </div> */}
     </Grid>
   );
 }
