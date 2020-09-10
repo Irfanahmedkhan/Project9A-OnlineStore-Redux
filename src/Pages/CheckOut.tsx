@@ -85,9 +85,9 @@ export default function CheckOut() {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  const handleReset = () => {
-    setActiveStep(0);
-  };
+  // const handleReset = () => {
+  //   setActiveStep(0);
+  // };
 
   return (
     <div className={classes.root}>
@@ -130,7 +130,7 @@ export default function CheckOut() {
             Your Purchase Successfully completed, Your will receive confirmation
             email with Purchase order Number
           </Typography>
-          <Button onClick={handleReset} className={classes.button}>
+          <Button className={classes.button}>
             <Link to="/" className={classes.link}>
               Home
             </Link>

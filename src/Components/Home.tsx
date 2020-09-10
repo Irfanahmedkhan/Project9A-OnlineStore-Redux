@@ -110,7 +110,7 @@ function Home() {
                 key={i}
                 className={classes.CardContainer}
               >
-                <Link to="/Products">
+                <Link to="/shoes">
                   <Card className={classes.Card}>
                     <CardMedia className={classes.media} image={New?.images} />
                     <CardContent className={classes.cardContent}>

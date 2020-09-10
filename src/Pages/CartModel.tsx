@@ -196,7 +196,7 @@ export default function CartModel() {
         <div>
           {products.filter((product) => product.added).length ? (
             <Button>
-              <Link to="/Stepper" className={classes.link}>
+              <Link to="/checkout" className={classes.link}>
                 Check Out
               </Link>
             </Button>

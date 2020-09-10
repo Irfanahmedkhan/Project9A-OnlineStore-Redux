@@ -98,7 +98,7 @@ function ProductDetails() {
               Add to cart
             </Button>
             <Button variant="contained" className={classes.AddToCart}>
-              <Link to="/Products" style={{ textDecoration: "none", color: "white" }}              >
+              <Link to="/shoes" style={{ textDecoration: "none", color: "white" }}              >
                 Back </Link>
             </Button>
           </Grid>

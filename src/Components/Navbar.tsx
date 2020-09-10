@@ -67,11 +67,11 @@ function Navbar() {
               HOME
             </Link>
 
-            <Link to="/Products" className={classes.link}>
+            <Link to="/shoes" className={classes.link}>
               SHOES{" "}
             </Link>
 
-            <Link to="/JacketsShop" className={classes.link}>
+            <Link to="/Jackets" className={classes.link}>
               JACKETS{" "}
             </Link>
           </div>

@@ -17,10 +17,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="Products" element={<Products />} />
+        <Route path="shoes" element={<Products />} />
         <Route path="Basket" element={<CartModel />} />
-        <Route path="JacketsShop" element={<JacketsShop />} />
-        <Route path="Stepper" element={<CheckOut />} />
+        <Route path="Jackets" element={<JacketsShop />} />
+        <Route path="checkout" element={<CheckOut />} />
         <Route path="ProductDetails/:id" element={<ProductDetails />} />
 
         {/* <Route path="*" element={{()=>{'Not found'}}} /> */}
