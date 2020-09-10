@@ -17,6 +17,7 @@ import {
   Avatar,
   Typography,
   ListItemText,
+  Badge,
 } from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { useSelector } from "react-redux";
@@ -67,6 +68,15 @@ const useStyles = makeStyles((theme: Theme) =>
       textAlign: "center",
       fontWeight: 400,
       marginTop: " 20px",
+    },
+    margin: {
+      // margin: theme.spacing.unit * 2
+    },
+    customBadge: {
+      backgroundColor: "red",
+      color: "white",
+      fontWeight: 600,
+
     },
 
     BasketText: {
@@ -202,12 +212,17 @@ export default function CartModel() {
     <div>
       {(["right"] as Anchor[]).map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>
+
+          <Badge 
+            classes={{ badge: classes.customBadge }}
+            // className={classes.margin}
+            onClick={toggleDrawer(anchor, true)}
+            badgeContent={products.filter((product) => product.added).length } 
+            color="secondary">
             <ShoppingBasketIcon style={{ fill: "white", width: "30px" }} />
-            <Typography className={classes.BasketText}>
-              {products.filter((product) => product.added).length}{" "}
-            </Typography>
-          </Button>
+          </Badge>
+
+        
           <Drawer
             anchor={anchor}
             open={state[anchor]}

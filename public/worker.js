@@ -14,8 +14,6 @@ this.addEventListener('install', (event) => {
                 "/static/media/123.5597db85.jpg",
                 "/static/media/111.344dc825.jpg",
                 "/static/media/logo.548c1b93.png",
-                
-
             ])
         }).catch((err) => {
             console.log('err', err)
