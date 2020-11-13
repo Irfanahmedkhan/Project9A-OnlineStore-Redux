@@ -58,7 +58,7 @@ function Navbar() {
         <Toolbar className={classes.container}>
           <div>
             <Link to="/">
-              <img src={logo} alt="logo" width="80px" height="35px" />
+              <img src={logo} alt="logo" width="50px" height="35px"  />
             </Link>
           </div>
 

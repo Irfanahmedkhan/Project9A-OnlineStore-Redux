@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) => ({
   Card: {
     width: "250px",
     "&:hover": {
-      cursor: "pointer",
       background: "#F5F5F5",
       fontFamily: "Barlow Condensed",
     },
@@ -207,14 +206,12 @@ function Products() {
   // <---------- Filter Shoes by Gender -------->
 
   return (
-    <Grid container style={{}}>
+    <Grid container>
       <Grid container direction="row" justify="center" alignItems="center">
         <Paper>
           <Tabs
             style={{ width: "100%", color: "red" }}
             value={TabValue}
-            indicatorColor="primary"
-            textColor="primary"
             centered
           >
             <Tab label="ALL" onClick={All} className={classes.Tab} />
